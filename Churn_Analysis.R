@@ -16,8 +16,10 @@ str(data)
 View(data)
 
 
-
 # Data Preprocessing  -----------------------------------------------------
+
+data = as.data.table(data)
+data[,.N, by = Churn]
 
 
 
